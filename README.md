@@ -5,6 +5,7 @@ The following docker container exposes a folder through Samba (SMB)
 You can run this container as follows:
 
 ```
+docker pull vbalasu/samba
 ./run.sh
 ```
 
@@ -62,3 +63,4 @@ smb://myuser@192.168.86.144
 ```
 
 Choose the username and password (myuser) to connect
+
