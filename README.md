@@ -50,3 +50,15 @@ docker run --rm -d -p 139:139 -p 445:445 -v $(pwd)/myuser:/myuser vbalasu/samba
 ;   browseable = no
 
 ```
+
+### Connect from a client
+
+On a Mac, you can use Finder and choose Go --> Connect to server (Command-K)
+
+then enter the path as shown in the below example:
+
+```
+smb://myuser@192.168.86.144
+```
+
+Choose the username and password (myuser) to connect
