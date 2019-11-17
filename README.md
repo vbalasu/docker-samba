@@ -67,6 +67,8 @@ Choose the username and password (myuser) to connect
 
 # Connect to a share on the cloud
 
+You can run the docker container in an Amazon EC2 instance, or other VM technology in the cloud (eg. Azure or GCP)
+
 Note that many ISPs will block traffic on the standard SMB port 445
 
 To get around this limitation, update run.sh to have docker forward traffic from another port (eg. 10445) on the host to port 445 on the container, as follows:
