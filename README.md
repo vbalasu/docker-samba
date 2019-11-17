@@ -89,4 +89,4 @@ Open Finder, and choose Go-->Connect to server. Enter the SMB url as shown above
 
 ### Connect from an Android
 
-Use a File Manager app, such as ES File Explorer. Go to Network --> LAN, and choose New. Then enter the server as <<hostname>>:10445, and enter your credentials. After a brief delay, you will be able to browse your files.
+Use a File Manager app, such as ES File Explorer. Go to Network --> LAN, and choose New. Then enter the server as `<<hostname>>:10445`, and enter your credentials. After a brief delay, you will be able to browse your files.
