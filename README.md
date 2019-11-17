@@ -64,3 +64,29 @@ smb://myuser@192.168.86.144
 
 Choose the username and password (myuser) to connect
 
+
+# Connect to a share on the cloud
+
+Note that many ISPs will block traffic on the standard SMB port 445
+
+To get around this limitation, update run.sh to have docker forward traffic from another port (eg. 10445) on the host to port 445 on the container, as follows:
+
+```
+docker run --rm -d -p 10139:139 -p 10445:445 -v $(pwd)/myuser:/myuser vbalasu/samba
+```
+
+Then open up port 10445 through a security group to the outside world.
+
+You should now be able to connect to your server by specifying the port number as follows:
+
+```
+smb://myuser@<<hostname>>:10445
+```
+
+### Connect from a Mac
+
+Open Finder, and choose Go-->Connect to server. Enter the SMB url as shown above. When prompted, enter the credentials
+
+### Connect from an Android
+
+Use a File Manager app, such as ES File Explorer. Go to Network --> LAN, and choose New. Then enter the server as <<hostname>>:10445, and enter your credentials. After a brief delay, you will be able to browse your files.
