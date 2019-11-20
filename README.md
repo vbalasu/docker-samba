@@ -85,10 +85,15 @@ You should now be able to connect to your server by specifying the port number a
 smb://myuser@<<hostname>>:10445
 ```
 
+### Connect from an Android
+
+Use a File Manager app, such as ES File Explorer. Go to Network --> LAN, and choose New. Then enter the server as `<<hostname>>:10445`, and enter your credentials. After a brief delay, you will be able to browse your files.
+
 ### Connect from a Mac
 
 Open Finder, and choose Go-->Connect to server. Enter the SMB url as shown above. When prompted, enter the credentials
 
-### Connect from an Android
-
-Use a File Manager app, such as ES File Explorer. Go to Network --> LAN, and choose New. Then enter the server as `<<hostname>>:10445`, and enter your credentials. After a brief delay, you will be able to browse your files.
+![mac1](media/mac1.png)
+![mac2](media/mac2.png)
+![mac3](media/mac3.png)
+![mac4](media/mac4.png)
